@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>التوعية عن الصم والبكم</title>
+  <style>
+    :root {
+      /* Dark Mode - Black Shades */
+      --bg-color: #000000;
+      --text-color: #f5f5f5;
+      --accent-color: #444444;
+      --card-bg: #111111;
+    }
+
+    body.light {
+      /* Light Mode */
+      --bg-color: #ffffff;
+      --text-color: #000000;
+      --accent-color: #222222;
+      --card-bg: #f4f4f4;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      transition: background-color 0.3s ease, color 0.3s ease;
+      line-height: 1.8;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 2rem;
+      border-bottom: 1px solid #222;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    .theme-toggle {
+      background: var(--accent-color);
+      color: white;
+      border: 1px solid #555;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: opacity 0.2s ease, background 0.3s ease;
+    }
+
+    .theme-toggle:hover {
+      opacity: 0.85;
+    }
+
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    .card {
+      background: var(--card-bg);
+      padding: 1.5rem;
+      border-radius: 12px;
+      margin-bottom: 1.5rem;
+      border: 1px solid #222;
+      transition: background 0.3s ease;
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      border-top: 1px solid #222;
+    }
+
+    a {
+      color: var(--text-color);
+      text-decoration: underline;
+      font-weight: bold;
+    }
+
+    a:hover {
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>التوعية عن الصم والبكم</h1>
+    <button class="theme-toggle" onclick="toggleTheme()">تغيير النمط</button>
+  </header>
+
+  <main>
+    <section>
+
+      <div class="card">
+        <h2>ما هي لغة الإشارة؟</h2>
+        <p>
+          لغة الإشارة هي لغة كاملة ومستقلة تعتمد على حاسة البصر، حيث تُعبّر عن المفاهيم والأفكار من خلال نظام متكامل من الإيماءات التي تؤديها اليدان، مدعومة بتعابير الوجه وحركة الشفاه ووضعية الجسم. وهي ليست مجرد إشارات عشوائية، بل تمتلك قواعد نحوية ومفردات خاصة بها، مما يجعلها وسيلة تواصل طبيعية وأساسية لمجتمعات الصم وضعاف السمع، كما تمثل جزءًا مهمًا من هويتهم الثقافية والاجتماعية.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>أنواع لغة الإشارة</h2>
+        <p>
+          تنقسم لغات الإشارة إلى عدة أنواع، وأبرزها التصنيف الجغرافي؛ إذ تمتلك كل دولة لغة إشارة خاصة بها مثل لغة الإشارة الأمريكية أو البريطانية أو العربية، والتي تختلف بدورها من دولة عربية إلى أخرى. كما توجد لغة إشارة دولية مبسطة تُستخدم للتواصل بين الأشخاص من جنسيات مختلفة. ومن المهم التأكيد أنه لا توجد لغة إشارة موحدة عالميًا، فكل لغة تنبع من ثقافة وتاريخ مجتمعها.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>نشأة لغة الإشارة وتطورها</h2>
+        <p>
+          لم تنشأ لغة الإشارة في فترة زمنية قصيرة، بل تطورت عبر سنوات طويلة بمساهمات العديد من الأشخاص. في القرن السادس عشر، عمل الراهب الإسباني بيدرو بونس دي ليون على تعليم الطلاب الصم باستخدام طرق تواصل معتمدة على الإيماءات. ثم جاء القس الفرنسي شارل ميشيل دي ليبيه في القرن الثامن عشر وأسهم في إنشاء أول مدرسة عامة للصم عام 1755. لاحقًا، سافر توماس هوبكنز جالوديت إلى فرنسا عام 1814 لتعلم طرق تعليم الصم، وأسهم في تأسيس أول مدرسة للصم في الولايات المتحدة، مما أدى إلى انتشار وتطور لغات الإشارة حول العالم.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>من هم الصم ومن هم البكم؟</h2>
+        <p>
+          الشخص الأصم هو من يعاني من فقدان جزئي أو كلي لحاسة السمع، وقد يكون ذلك منذ الولادة أو نتيجة عوامل مختلفة مع مرور الوقت. أما الأبكم فهو الشخص الذي يعاني من مشكلة تؤثر في القدرة على النطق والكلام بسبب خلل في الأعضاء أو المراكز العصبية المسؤولة عن إنتاج الكلام. ومن المهم معرفة أن فقدان السمع لا يعني بالضرورة فقدان القدرة على الكلام، كما أن فقدان القدرة على الكلام لا يعني فقدان السمع.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>أسباب فقدان حاسة السمع</h2>
+        <p>
+          من أسباب فقدان السمع: التقدم في العمر، التعرض المستمر للضوضاء العالية، تلف الأذن الداخلية أو الخلايا العصبية، تراكم شمع الأذن، التهابات الأذن، النمو غير الطبيعي للعظام، أو تمزق طبلة الأذن. بعض هذه الأسباب يمكن علاجه طبيًا، بينما قد يكون بعضها دائمًا.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>أسباب فقدان القدرة على الكلام (الحبسة)</h2>
+        <p>
+          فقدان القدرة على الكلام قد ينتج عن سكتة دماغية، إصابة شديدة في الرأس، اضطرابات عصبية، أو مشكلات في الأحبال الصوتية. وغالبًا ما ترتبط الحبسة بتلف في المناطق المسؤولة عن اللغة في الدماغ.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>الحلول والعلاجات الممكنة</h2>
+        <p>
+          تختلف طرق العلاج حسب السبب. فقد يشمل العلاج إزالة شمع الأذن في الحالات البسيطة، أو التدخل الجراحي في بعض الحالات، أو استخدام المعينات السمعية والغرسات القوقعية لتحسين القدرة على السمع. كما يُعد تعلم لغة الإشارة من أهم الوسائل الداعمة لتمكين الأفراد من التواصل الفعال.
+        </p>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      تعلم لغة الإشارة:
+      <a href="https://youtube.com/playlist?list=PLaQzmDaYayMCuW3Y0LhKnYON8u5_QQYsW&si=qsiu-LwrplgPJmgI" target="_blank">
+        اضغط هنا لمشاهدة الدورة التعليمية
+      </a>
+    </p>
+      <div style="margin-top: 1.5rem;">
+      <a href="credits.html">
+        <button class="theme-toggle">Credits</button>
+      </a>
+    </div>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('light');
+    }
+  </script>
+</body>
+</html>
